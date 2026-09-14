@@ -1,0 +1,38 @@
+@import 'devicon/devicon.min.css';
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --color-brand-50: #EFF6FF;
+    --color-brand-100: #DBEAFE;
+    --color-brand-400: #3B9EFF;
+    --color-brand-500: #0090FF;
+    --color-brand-600: #0078D4;
+    --color-brand-700: #0065B3;
+
+    --font-heading: "Mulish", sans-serif;
+    --font-body: "Inter", sans-serif;
+}
+
+body {
+    font-family: var(--font-body)
+}
+
+.font-heading {
+    font-family: var(--font-heading);
+}
+
+.font-body {
+    font-family: var(--font-body);
+}
+
+[aria-current="page"] {
+    background-color: white !important;
+}
+
+nav[aria-label="Pagination Navigation"] * {
+    background-color: white !important;
+    color: var(--color-slate-950) !important;
+}
